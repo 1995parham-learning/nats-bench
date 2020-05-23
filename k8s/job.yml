@@ -1,0 +1,27 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  labels:
+    app: nats-bench
+  name: nats-bench
+spec:
+  template:
+    metadata:
+      labels:
+        app: nats-bench
+    spec:
+      completions: 2
+      containers:
+        - name: nats-bench
+          image: 1995parham/nats-bench
+          imagePullPolicy: Always
+          args:
+            - -ns
+            - 1
+            - -np
+            - 1
+            - -s
+            - nats://127.0.0.1:4222
+            - -n
+            - 100
