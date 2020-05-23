@@ -6,22 +6,25 @@ metadata:
     app: nats-bench
   name: nats-bench
 spec:
+  completions: 2
+  parallelism: 2
   template:
     metadata:
       labels:
         app: nats-bench
     spec:
-      completions: 2
+      restartPolicy: Never
       containers:
         - name: nats-bench
           image: 1995parham/nats-bench
           imagePullPolicy: Always
           args:
             - -ns
-            - 1
+            - "1"
             - -np
-            - 1
+            - "1"
             - -s
-            - nats://127.0.0.1:4222
+            - nats://nats:4222
             - -n
-            - 100
+            - "100"
+            - hello
