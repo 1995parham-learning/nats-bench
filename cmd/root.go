@@ -1,11 +1,11 @@
 package cmd
 
 import (
-	"fmt"
 	"os"
 
+	"github.com/1995parham/nats-bench/cmd/producer"
+	"github.com/1995parham/nats-bench/cmd/subscriber"
 	"github.com/1995parham/nats-bench/config"
-	"github.com/nats-io/nats.go"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )
@@ -21,15 +21,10 @@ func Execute() {
 		Short: "NATS Benchmark tools and guidelines",
 	}
 
-	server := root.PersistentFlags().StringP(
-		"server", "s",
-		nats.DefaultURL,
-		fmt.Sprintf("nats server url e.g. %s", nats.DefaultURL),
-	)
+	config.Register(root.PersistentFlags())
 
-	var cfg config.Config
-
-	cfg.URL = *server
+	producer.Register(root)
+	subscriber.Register(root)
 
 	if err := root.Execute(); err != nil {
 		logrus.Errorf("failed to execute root command: %s", err.Error())
