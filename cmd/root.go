@@ -3,9 +3,9 @@ package cmd
 import (
 	"os"
 
-	"github.com/1995parham/nats-bench/cmd/producer"
-	"github.com/1995parham/nats-bench/cmd/subscriber"
-	"github.com/1995parham/nats-bench/config"
+	"github.com/nats-ir/nats-bench/cmd/producer"
+	"github.com/nats-ir/nats-bench/cmd/subscriber"
+	"github.com/nats-ir/nats-bench/config"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )

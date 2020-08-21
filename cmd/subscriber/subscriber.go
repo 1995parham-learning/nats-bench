@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/1995parham/nats-bench/config"
-	"github.com/1995parham/nats-bench/internal/subscriber"
+	"github.com/nats-ir/nats-bench/config"
+	"github.com/nats-ir/nats-bench/internal/subscriber"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )

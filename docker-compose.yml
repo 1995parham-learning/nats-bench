@@ -3,5 +3,7 @@ version: "3.1"
 services:
   nats:
     image: nats
+    hostname: nats
+    container_name: nats
     ports:
       - 4222:4222

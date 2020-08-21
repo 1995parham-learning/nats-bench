@@ -3,8 +3,8 @@ package producer
 import (
 	"sync"
 
-	"github.com/1995parham/nats-bench/config"
-	"github.com/1995parham/nats-bench/internal/producer"
+	"github.com/nats-ir/nats-bench/config"
+	"github.com/nats-ir/nats-bench/internal/producer"
 	"github.com/spf13/cobra"
 )
 

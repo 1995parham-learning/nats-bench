@@ -4,9 +4,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/1995parham/nats-bench/internal/common"
-	"github.com/1995parham/nats-bench/message"
-	"github.com/1995parham/nats-bench/sample"
+	"github.com/nats-ir/nats-bench/internal/common"
+	"github.com/nats-ir/nats-bench/message"
+	"github.com/nats-ir/nats-bench/sample"
 )
 
 type metrics struct {
@@ -47,6 +47,7 @@ func Run(url, subject string, msgCount int, timeout time.Duration) sample.Sample
 			asize += m.size
 			counter++
 
+			//nolint:gomnd
 			if counter == 1 {
 				start = time.Now()
 			}

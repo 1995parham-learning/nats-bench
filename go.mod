@@ -1,4 +1,4 @@
-module github.com/1995parham/nats-bench
+module github.com/nats-ir/nats-bench
 
 go 1.14
 

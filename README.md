@@ -1,2 +1,3 @@
-# nats-bench
-NATS Benchmark tools and guidelines
+# NATS Bench
+
+NATS Benchmark tools and guidelines.
