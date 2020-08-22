@@ -47,7 +47,6 @@ func Run(url, subject string, msgCount int, timeout time.Duration) sample.Sample
 			asize += m.size
 			counter++
 
-			//nolint:gomnd
 			if counter == 1 {
 				start = time.Now()
 			}
@@ -58,6 +57,7 @@ func Run(url, subject string, msgCount int, timeout time.Duration) sample.Sample
 
 		if counter >= msgCount {
 			counter = msgCount
+
 			break
 		}
 
