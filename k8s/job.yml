@@ -16,7 +16,7 @@ spec:
       restartPolicy: Never
       containers:
         - name: nats-bench
-          image: 1995parham/nats-bench
+          image: 4lie/nats-bench
           imagePullPolicy: Always
           args:
             - -ns
