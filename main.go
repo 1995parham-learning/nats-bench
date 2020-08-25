@@ -1,6 +1,6 @@
 package main
 
-import "github.com/nats-ir/nats-bench/cmd"
+import "github.com/4lie/nats-bench/cmd"
 
 func main() {
 	cmd.Execute()

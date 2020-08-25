@@ -1,6 +1,6 @@
-module github.com/nats-ir/nats-bench
+module github.com/4lie/nats-bench
 
-go 1.14
+go 1.15
 
 require (
 	github.com/knadh/koanf v0.11.0

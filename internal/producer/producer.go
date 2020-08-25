@@ -3,8 +3,8 @@ package producer
 import (
 	"time"
 
-	"github.com/nats-ir/nats-bench/internal/common"
-	"github.com/nats-ir/nats-bench/message"
+	"github.com/4lie/nats-bench/internal/common"
+	"github.com/4lie/nats-bench/message"
 	"github.com/sirupsen/logrus"
 )
 
