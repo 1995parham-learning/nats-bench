@@ -1,7 +1,6 @@
 # NATS Bench
 
-[![Drone (cloud)](https://img.shields.io/drone/build/4lie/nats-bench.svg?style=flat-square&logo=drone)](https://cloud.drone.io/4lie/nats-bench)
-
 ## Introduction
 
-NATS Benchmark tools and guidelines.
+I use NATS in many different situations and companies. Here I want to load test it using its
+[official tool](https://github.com/nats-io/natscli).
